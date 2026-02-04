@@ -62,7 +62,7 @@ namespace RestfullService.Extensions.ServiceCollectionExtensions
 
                         var message = context.Exception switch
                         {
-                            SecurityTokenExpiredException => context.Exception.Message,
+                            SecurityTokenExpiredException => "Token expired",
                             SecurityTokenInvalidSignatureException => "Invalid signature",
                             SecurityTokenNoExpirationException => "Token missing expiration",
                             _ => "Token invalid"
