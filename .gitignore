@@ -13,6 +13,7 @@ obj/
 # Rider/VS Code
 .idea/
 .vscode/
+.vs/
 
 # NuGet packages
 *.nupkg
